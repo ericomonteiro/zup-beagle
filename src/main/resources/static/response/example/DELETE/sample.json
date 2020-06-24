@@ -1,4 +1,7 @@
 {
-  "httpMethod": "DELETE",
-  "name": "Érico Cintra Monteiro"
+  "httpStatus" : 500,
+  "content": {
+    "httpMethod": "DELETE",
+    "name": "Érico Cintra Monteiro"
+  }
 }

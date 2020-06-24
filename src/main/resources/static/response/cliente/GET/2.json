@@ -1,0 +1,6 @@
+{
+  "httpStatus" : 404,
+  "content": {    
+    "error": "Cliente não encontrado"
+  }
+}
