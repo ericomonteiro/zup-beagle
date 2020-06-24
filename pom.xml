@@ -60,11 +60,25 @@
 			</exclusions>
 		</dependency>
 
+		<!-- Beagle -->
 		<dependency>
 			<groupId>br.com.zup.beagle</groupId>
 			<artifactId>beagle-spring-starter</artifactId>
 			<version>0.3.0</version>
 		</dependency>
+
+		<!-- Swagger -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

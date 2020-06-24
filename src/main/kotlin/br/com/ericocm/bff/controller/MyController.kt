@@ -1,6 +1,6 @@
-package br.com.ericocm.bff.controllers
+package br.com.ericocm.bff.controller
 
-import br.com.ericocm.bff.services.MyService
+import br.com.ericocm.bff.service.MyService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 

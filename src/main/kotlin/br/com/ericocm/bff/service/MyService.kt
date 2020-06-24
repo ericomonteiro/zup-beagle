@@ -1,4 +1,4 @@
-package br.com.ericocm.bff.services
+package br.com.ericocm.bff.service
 
 import br.com.zup.beagle.action.Action
 import br.com.zup.beagle.action.ShowNativeDialog
