@@ -37,7 +37,7 @@ class MockController {
         val mockContent = fileJSONToObject(folder, file, HttpMethod.DELETE)
         return ResponseEntity.status(mockContent.httpStatus).body(mockContent.content)
     }
-    
+
     private fun fileJSONToObject(folder: String,file : String, httpMethod: HttpMethod) : MockContent {
         val fullPathName = "$staticContentPath/$folder/$httpMethod/$file.json"
         println(fullPathName)
