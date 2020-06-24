@@ -19,6 +19,13 @@
 		<kotlin.version>1.3.72</kotlin.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>bintray-zupit-repo</id>
+			<url>https://dl.bintray.com/zupit/repo</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -51,6 +58,12 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.zup.beagle</groupId>
+			<artifactId>beagle-spring-starter</artifactId>
+			<version>0.3.0</version>
 		</dependency>
 	</dependencies>
 
