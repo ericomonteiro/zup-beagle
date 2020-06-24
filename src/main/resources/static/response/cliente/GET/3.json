@@ -1,5 +1,5 @@
 {
-  "httpStatus" : 404,
+  "httpStatus" : 500,
   "content": {    
     "error": "Cliente não encontrado"
   }
