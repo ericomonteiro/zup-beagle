@@ -1,112 +1,241 @@
 {
-  "httpStatus": 200,
-  "content": {
+  "_beagleComponent_": "beagle:screenComponent",
+  "identifier": null,
+  "safeArea": null,
+  "navigationBar": null,
+  "child": {
       "_beagleComponent_": "beagle:container",
       "children": [
-        {
-          "_beagleComponent_": "beagle:image",
-          "name": "IMG_INIT",
-          "style": {
-            "flex": {
-              "alignSelf": "CENTER"
-            },
-            "size": {
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            },
-            "margin": {
-              "top": {
-                "value": 116,
-                "type": "REAL"
+          {
+              "_beagleComponent_": "beagle:image",
+              "name": "IMG_INIT",
+              "contentMode": null,
+              "id": null,
+              "flex": {
+                  "flexDirection": null,
+                  "direction": null,
+                  "flexWrap": null,
+                  "justifyContent": null,
+                  "alignItems": null,
+                  "alignSelf": "CENTER",
+                  "alignContent": null,
+                  "positionType": null,
+                  "basis": null,
+                  "flex": null,
+                  "grow": null,
+                  "shrink": null,
+                  "display": null,
+                  "size": {
+                      "width": {
+                          "value": 225,
+                          "type": "REAL"
+                      },
+                      "height": {
+                          "value": 225,
+                          "type": "REAL"
+                      },
+                      "maxWidth": null,
+                      "maxHeight": null,
+                      "minWidth": null,
+                      "minHeight": null,
+                      "aspectRatio": null
+                  },
+                  "margin": {
+                      "left": null,
+                      "top": {
+                          "value": 116,
+                          "type": "REAL"
+                      },
+                      "right": null,
+                      "bottom": null,
+                      "start": {
+                          "value": 64,
+                          "type": "REAL"
+                      },
+                      "end": {
+                          "value": 64,
+                          "type": "REAL"
+                      },
+                      "horizontal": null,
+                      "vertical": null,
+                      "all": null
+                  },
+                  "padding": null,
+                  "position": null
               },
-              "left": {
-                "value": 64,
-                "type": "REAL"
-              },
-              "right": {
-                "value": 64,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:text",
-          "text": "Lorem ipsum dolor sit ament",
-          "alignment": "CENTER",
-          "textColor": "#2A2A2A",
-          "style": {
-            "margin": {
-              "top": {
-                "value": 40,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:text",
-          "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo eros, porttitor sit amet metus vitae, bibendum porttitor nisi. :)",
-          "style": {
-            "margin": {
-              "top": {
-                "value": 8,
-                "type": "REAL"
-              },
-              "left": {
-                "value": 24,
-                "type": "REAL"
-              },
-              "right": {
-                "value": 24,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:container",
-          "style": {
-            "flex": {
-              "flexDirection": "ROW",
-              "alignItems": "FLEX_END",
-              "justifyContent": "SPACE_BETWEEN"
-            },
-            "margin": {
-              "top": {
-                "value": 108,
-                "type": "REAL"
-              },
-              "left": {
-                "value": 24,
-                "type": "REAL"
-              },
-              "right": {
-                "value": 24,
-                "type": "REAL"
-              }
-            }
+              "appearance": null,
+              "accessibility": null
           },
-          "children": [
-            {
-              "_beagleComponent_": "beagle:button",
-              "text": "pular",
-              "style": {
-                "border": 0
-              }
-            },
-            {
-              "_beagleComponent_": "beagle:button",
-              "text": "continuar",
-              "style": {
-                "color": "RED",
-                "border": 0
-              }
-            }
-          ]
-        }
-      ]
-    }
+          {
+              "_beagleComponent_": "beagle:text",
+              "text": "Bem vindo ao Beagle!",
+              "style": "TXT_BOLD",
+              "textColor": null,
+              "alignment": null,
+              "id": null,
+              "flex": {
+                  "flexDirection": null,
+                  "direction": null,
+                  "flexWrap": null,
+                  "justifyContent": null,
+                  "alignItems": null,
+                  "alignSelf": "CENTER",
+                  "alignContent": null,
+                  "positionType": null,
+                  "basis": null,
+                  "flex": null,
+                  "grow": null,
+                  "shrink": null,
+                  "display": null,
+                  "size": null,
+                  "margin": {
+                      "left": null,
+                      "top": {
+                          "value": 40,
+                          "type": "REAL"
+                      },
+                      "right": null,
+                      "bottom": null,
+                      "start": {
+                          "value": 24,
+                          "type": "REAL"
+                      },
+                      "end": {
+                          "value": 24,
+                          "type": "REAL"
+                      },
+                      "horizontal": null,
+                      "vertical": null,
+                      "all": null
+                  },
+                  "padding": null,
+                  "position": null
+              },
+              "appearance": null,
+              "accessibility": null
+          },
+          {
+              "_beagleComponent_": "beagle:text",
+              "text": "Essa tela esta vindo de um servidor remoto",
+              "style": "TXT_NORMAL",
+              "textColor": null,
+              "alignment": null,
+              "id": null,
+              "flex": {
+                  "flexDirection": null,
+                  "direction": null,
+                  "flexWrap": null,
+                  "justifyContent": null,
+                  "alignItems": null,
+                  "alignSelf": null,
+                  "alignContent": null,
+                  "positionType": null,
+                  "basis": null,
+                  "flex": null,
+                  "grow": null,
+                  "shrink": null,
+                  "display": null,
+                  "size": null,
+                  "margin": {
+                      "left": null,
+                      "top": {
+                          "value": 8,
+                          "type": "REAL"
+                      },
+                      "right": null,
+                      "bottom": null,
+                      "start": {
+                          "value": 24,
+                          "type": "REAL"
+                      },
+                      "end": {
+                          "value": 24,
+                          "type": "REAL"
+                      },
+                      "horizontal": null,
+                      "vertical": null,
+                      "all": null
+                  },
+                  "padding": null,
+                  "position": null
+              },
+              "appearance": null,
+              "accessibility": null
+          },
+          {
+              "_beagleComponent_": "beagle:container",
+              "children": [
+                  {
+                      "_beagleComponent_": "beagle:button",
+                      "text": "jump",
+                      "style": "BTN_BLACK",
+                      "action": null,
+                      "clickAnalyticsEvent": null,
+                      "id": null,
+                      "flex": null,
+                      "appearance": null,
+                      "accessibility": null
+                  },
+                  {
+                      "_beagleComponent_": "beagle:button",
+                      "text": "continue",
+                      "style": "BTN_ORANGE",
+                      "action": null,
+                      "clickAnalyticsEvent": null,
+                      "id": null,
+                      "flex": null,
+                      "appearance": null,
+                      "accessibility": null
+                  }
+              ],
+              "id": null,
+              "flex": {
+                  "flexDirection": "ROW",
+                  "direction": null,
+                  "flexWrap": null,
+                  "justifyContent": "SPACE_BETWEEN",
+                  "alignItems": "FLEX_END",
+                  "alignSelf": null,
+                  "alignContent": null,
+                  "positionType": null,
+                  "basis": null,
+                  "flex": null,
+                  "grow": null,
+                  "shrink": null,
+                  "display": null,
+                  "size": null,
+                  "margin": {
+                      "left": {
+                          "value": 24,
+                          "type": "REAL"
+                      },
+                      "top": {
+                          "value": 108,
+                          "type": "REAL"
+                      },
+                      "right": null,
+                      "bottom": null,
+                      "start": null,
+                      "end": {
+                          "value": 24,
+                          "type": "REAL"
+                      },
+                      "horizontal": null,
+                      "vertical": null,
+                      "all": null
+                  },
+                  "padding": null,
+                  "position": null
+              },
+              "appearance": null,
+              "accessibility": null
+          }
+      ],
+      "id": null,
+      "flex": null,
+      "appearance": null,
+      "accessibility": null
+  },
+  "appearance": null,
+  "screenAnalyticsEvent": null
 }
