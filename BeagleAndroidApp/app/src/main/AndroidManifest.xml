@@ -19,6 +19,9 @@
             android:name="br.com.zup.beagle.preview.PreviewActivity"
             android:theme="@style/MyTheme"/>
 
+        <activity
+            android:name=".beagle.AppBeagleActivity"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

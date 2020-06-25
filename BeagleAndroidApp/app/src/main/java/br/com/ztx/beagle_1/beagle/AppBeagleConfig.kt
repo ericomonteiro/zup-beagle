@@ -11,8 +11,7 @@ import br.com.zup.beagle.setup.Environment
 @BeagleComponent
 class AppBeagleConfig : BeagleConfig {
 
-    //TODO Trocar mock url quando houver endpoint
-    override val baseUrl: String get() = "https://myapp.server.com/"
+    override val baseUrl: String get() = "http://192.168.0.29:8080/beagle/screen"
 
     override val environment: Environment get() = Environment.DEBUG
 
