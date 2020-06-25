@@ -5,6 +5,7 @@ import br.com.zup.beagle.networking.*
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
+import okhttp3.logging.HttpLoggingInterceptor
 import okio.IOException
 
 @BeagleComponent
@@ -21,17 +22,14 @@ class AppCustomClient : HttpClient {
         addMethod(request, requestBuilder)
         addHeaders(request.headers, requestBuilder)
 
+        val logging = HttpLoggingInterceptor()
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY)
+
         val httpClient = OkHttpClient.Builder()
+        httpClient.addInterceptor(logging)
 
-        httpClient.addInterceptor(object : Interceptor {
-            override fun intercept(chain: Interceptor.Chain): Response {
-                val newRequest = chain.request().newBuilder()
-                    .header("KEY", "VALUE")
-                    .build()
-
-                return chain.proceed(newRequest)
-            }
-        })
+        //TODO Activate this interceptor and disable logging
+        //configInterceptorOfBeagleDocumentation(httpClient)
 
         val requestCall = httpClient.build().newCall(requestBuilder.build())
         requestCall.enqueue(object: Callback {
@@ -53,6 +51,22 @@ class AppCustomClient : HttpClient {
                 requestCall.cancel()
             }
         }
+    }
+
+    private fun configInterceptorOfBeagleDocumentation(httpClient: OkHttpClient.Builder) {
+        httpClient.addInterceptor(object : Interceptor {
+            override fun intercept(chain: Interceptor.Chain): Response {
+                val newRequest = chain.request().newBuilder()
+                    .header("KEY", "VALUE")
+                    .build()
+
+                return chain.proceed(newRequest)
+            }
+        })
+    }
+
+    private fun getInterceptorOfBeagleDocumentation(){
+
     }
 
     private fun createResponseData(response: Response): ResponseData {

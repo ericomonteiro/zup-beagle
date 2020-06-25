@@ -22,7 +22,7 @@ class AppBeagleConfig : BeagleConfig {
     )
 
     private object Constants {
-        const val DEFAULT_CACHE_ENABLED = true
+        const val DEFAULT_CACHE_ENABLED = false
         const val DEFAULT_MAX_AGE = 300L
         const val DEFAULT_MEMORY_MAX_CAPACITY = 15
     }
