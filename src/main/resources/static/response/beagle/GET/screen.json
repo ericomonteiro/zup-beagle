@@ -7,7 +7,7 @@
         "_beagleComponent_": "beagle:image",
         "path": {
           "_beagleImagePath_": "remote",
-          "url": "https://via.placeholder.com/232/808080 ?Text=Imagem"
+          "url": "https://via.placeholder.com/232/808080?Text=Imagem"
         },
         "style": {
           "flex": {
@@ -41,7 +41,6 @@
         "alignment": "CENTER",
         "textColor": "#2A2A2A",
         "style": {
-          "fontWeight": "BOLD",
           "margin": {
             "top": {
               "value": 40,
@@ -99,12 +98,6 @@
             "text": "pular",
             "style": {
               "border": 0
-            },
-            "onPress": {
-              "_beagleAction_": "beagle:pushView",
-              "route": {
-                "url": "/docs.json"
-              }
             }
           },
           {
