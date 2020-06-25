@@ -1,10 +1,11 @@
-package br.com.ztx.beagle_1
+package br.com.ztx.beagle_1.beagle
 
-import br.com.ztx.beagle_1.AppDesignSystem.Style.BTN_BLACK
-import br.com.ztx.beagle_1.AppDesignSystem.Style.BTN_ORANGE
-import br.com.ztx.beagle_1.AppDesignSystem.Style.IMG_INIT
-import br.com.ztx.beagle_1.AppDesignSystem.Style.TXT_BOLD
-import br.com.ztx.beagle_1.AppDesignSystem.Style.TXT_NORMAL
+import br.com.ztx.beagle_1.R
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.BTN_BLACK
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.BTN_ORANGE
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_INIT
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.TXT_BOLD
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.TXT_NORMAL
 import br.com.zup.beagle.annotation.BeagleComponent
 import br.com.zup.beagle.setup.DesignSystem
 
@@ -19,7 +20,8 @@ class AppDesignSystem : DesignSystem {
         const val TXT_NORMAL = "TXT_NORMAL"
     }
 
-    override fun toolbarStyle(name: String): Int = R.style.Toolbar
+    override fun toolbarStyle(name: String): Int =
+        R.style.Toolbar
 
     override fun buttonStyle(name: String): Int {
         return when (name) {

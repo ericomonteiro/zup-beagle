@@ -1,8 +1,7 @@
 package br.com.ztx.beagle_1.components.views
 
 import android.content.Context
-import br.com.ztx.beagle_1.AppDesignSystem
-import br.com.ztx.beagle_1.components.CustomBeagleComponent
+import br.com.ztx.beagle_1.beagle.AppDesignSystem
 import br.com.ztx.beagle_1.components.actions.CustomAction
 import br.com.ztx.beagle_1.components.views.CustomScreen.Constants.BTN_TEXT_BLACK
 import br.com.ztx.beagle_1.components.views.CustomScreen.Constants.BTN_TEXT_ORANGE

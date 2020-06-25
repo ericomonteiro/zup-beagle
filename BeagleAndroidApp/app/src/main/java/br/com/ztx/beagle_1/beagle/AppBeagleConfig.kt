@@ -1,8 +1,8 @@
-package br.com.ztx.beagle_1
+package br.com.ztx.beagle_1.beagle
 
-import br.com.ztx.beagle_1.AppBeagleConfig.Constants.DEFAULT_CACHE_ENABLED
-import br.com.ztx.beagle_1.AppBeagleConfig.Constants.DEFAULT_MAX_AGE
-import br.com.ztx.beagle_1.AppBeagleConfig.Constants.DEFAULT_MEMORY_MAX_CAPACITY
+import br.com.ztx.beagle_1.beagle.AppBeagleConfig.Constants.DEFAULT_CACHE_ENABLED
+import br.com.ztx.beagle_1.beagle.AppBeagleConfig.Constants.DEFAULT_MAX_AGE
+import br.com.ztx.beagle_1.beagle.AppBeagleConfig.Constants.DEFAULT_MEMORY_MAX_CAPACITY
 import br.com.zup.beagle.annotation.BeagleComponent
 import br.com.zup.beagle.setup.BeagleConfig
 import br.com.zup.beagle.setup.Cache

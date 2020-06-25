@@ -1,8 +1,9 @@
-package br.com.ztx.beagle_1
+package br.com.ztx.beagle_1.beagle
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.widget.Toolbar
+import br.com.ztx.beagle_1.R
 import br.com.zup.beagle.annotation.BeagleComponent
 import br.com.zup.beagle.view.BeagleActivity
 import br.com.zup.beagle.view.ServerDrivenState
@@ -17,7 +18,8 @@ class AppBeagleActivity : BeagleActivity() {
         setContentView(R.layout.activity_app_beagle)
     }
 
-    override fun getServerDrivenContainerId(): Int = R.id.server_driven_container
+    override fun getServerDrivenContainerId(): Int =
+        R.id.server_driven_container
 
     override fun getToolbar(): Toolbar = custom_toolbar
 
