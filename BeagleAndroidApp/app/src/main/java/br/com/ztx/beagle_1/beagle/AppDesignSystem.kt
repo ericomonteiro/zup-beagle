@@ -4,6 +4,8 @@ import br.com.ztx.beagle_1.R
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.BTN_BLACK
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.BTN_ORANGE
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_INIT
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_SCREEN_INFO_1
+import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_SCREEN_INFO_2
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.TXT_BOLD
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.TXT_NORMAL
 import br.com.zup.beagle.annotation.BeagleComponent
@@ -15,7 +17,10 @@ class AppDesignSystem : DesignSystem {
     object Style {
         const val BTN_ORANGE = "BTN_ORANGE"
         const val BTN_BLACK = "BTN_BLACK"
-        const val IMG_INIT = "IMG_INIT"
+
+        const val IMG_SCREEN_INFO_1 = "IMG_SCREEN_INFO_1"
+        const val IMG_SCREEN_INFO_2 = "IMG_SCREEN_INFO_2"
+
         const val TXT_BOLD = "TXT_BOLD"
         const val TXT_NORMAL = "TXT_NORMAL"
     }
@@ -33,7 +38,8 @@ class AppDesignSystem : DesignSystem {
 
     override fun image(name: String): Int {
         return when (name) {
-            IMG_INIT -> android.R.drawable.ic_delete
+            IMG_SCREEN_INFO_1 -> R.mipmap.ic_screen_info_1_round
+            IMG_SCREEN_INFO_2 -> R.mipmap.ic_screen_info_2_round
             else -> android.R.drawable.ic_menu_help
         }
     }
