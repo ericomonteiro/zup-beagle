@@ -6,7 +6,9 @@ import br.com.ericocm.bff.service.MyService
 import br.com.zup.beagle.ext.unitReal
 import br.com.zup.beagle.widget.core.*
 import br.com.zup.beagle.widget.layout.Container
+import br.com.zup.beagle.widget.layout.PageView
 import br.com.zup.beagle.widget.layout.Screen
+import br.com.zup.beagle.widget.pager.PageIndicator
 import br.com.zup.beagle.widget.ui.Button
 import br.com.zup.beagle.widget.ui.Image
 import br.com.zup.beagle.widget.ui.Text
@@ -37,66 +39,82 @@ class MyCustomScreenController(private val service: MyService) {
         return Screen(
             child = Container(
                 children = listOf(
-                    Image(
-                        name = Style.IMG_INIT
-                    ).applyFlex(
-                        Flex(
-                            size = Size(
-                                width = 225.unitReal(),
-                                height = 225.unitReal()
-                            ),
-                            margin = EdgeValue(
-                                top = 116.unitReal(),
-                                start = 64.unitReal(),
-                                end = 64.unitReal()
-                            ), alignSelf = AlignSelf.CENTER
-                        )
-                    ),
-                    Text(
-                        text = title,
-                        style = Style.TXT_BOLD
-                    ).applyFlex(
-                        Flex(
-                            margin = EdgeValue(
-                                top = 40.unitReal(),
-                                start = 24.unitReal(),
-                                end = 24.unitReal()
-                            ), alignSelf = AlignSelf.CENTER
-                        )
-                    ),
-                    Text(
-                        text = subtitle,
-                        style = Style.TXT_NORMAL
-                    ).applyFlex(
-                        Flex(
-                            margin = EdgeValue(
-                                top = 8.unitReal(),
-                                start = 24.unitReal(),
-                                end = 24.unitReal()
-                            )
-                        )
-                    ),
-                    Container(
-                        children = listOf(
-                            Button(
-                                text = BTN_TEXT_BLACK,
-                                style = Style.BTN_BLACK
+                    PageView(
+                        pageIndicator = PageIndicator("RED", "GRAY"),
+                        pages = listOf(
+                            Container(
+                                children = listOf(
+                                    Image(
+                                        name = Style.IMG_INIT
+                                    ).applyFlex(
+                                        Flex(
+                                            size = Size(
+                                                width = 225.unitReal(),
+                                                height = 225.unitReal()
+                                            ),
+                                            margin = EdgeValue(
+                                                top = 116.unitReal(),
+                                                start = 64.unitReal(),
+                                                end = 64.unitReal()
+                                            ), alignSelf = AlignSelf.CENTER
+                                        )
+                                    ),
+                                    Text(
+                                        text = title,
+                                        style = Style.TXT_BOLD
+                                    ).applyFlex(
+                                        Flex(
+                                            margin = EdgeValue(
+                                                top = 40.unitReal(),
+                                                start = 24.unitReal(),
+                                                end = 24.unitReal()
+                                            ), alignSelf = AlignSelf.CENTER
+                                        )
+                                    ),
+                                    Text(
+                                        text = subtitle,
+                                        style = Style.TXT_NORMAL
+                                    ).applyFlex(
+                                        Flex(
+                                            margin = EdgeValue(
+                                                top = 8.unitReal(),
+                                                start = 24.unitReal(),
+                                                end = 24.unitReal()
+                                            )
+                                        )
+                                    ),
+                                    Container(
+                                        children = listOf(
+                                            Button(
+                                                text = BTN_TEXT_BLACK,
+                                                style = Style.BTN_BLACK
 
+                                            ),
+                                            Button(
+                                                text = BTN_TEXT_ORANGE,
+                                                style = Style.BTN_ORANGE
+                                            )
+                                        )
+                                    ).applyFlex(
+                                        Flex(
+                                            flexDirection = FlexDirection.ROW,
+                                            alignItems = AlignItems.FLEX_END,
+                                            justifyContent = JustifyContent.SPACE_BETWEEN,
+                                            margin = EdgeValue(
+                                                top = 108.unitReal(),
+                                                end = 24.unitReal(),
+                                                left = 24.unitReal()
+                                            )
+                                        )
+                                    )
+                                )
                             ),
-                            Button(
-                                text = BTN_TEXT_ORANGE,
-                                style = Style.BTN_ORANGE
-                            )
-                        )
-                    ).applyFlex(
-                        Flex(
-                            flexDirection = FlexDirection.ROW,
-                            alignItems = AlignItems.FLEX_END,
-                            justifyContent = JustifyContent.SPACE_BETWEEN,
-                            margin = EdgeValue(
-                                top = 108.unitReal(),
-                                end = 24.unitReal(),
-                                left = 24.unitReal()
+                            Container (
+                                children = listOf(
+                                    Text (
+                                        text = "Second page"
+                                    )
+                                )
                             )
                         )
                     )
