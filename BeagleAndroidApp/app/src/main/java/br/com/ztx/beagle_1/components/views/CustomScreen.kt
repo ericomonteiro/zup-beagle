@@ -28,7 +28,7 @@ class CustomScreen(val context: Context, val title: String, val subtitle: String
             child = Container(
                 children = listOf(
                     Image(
-                        name = AppDesignSystem.Style.IMG_INIT
+                        name = AppDesignSystem.Style.IMG_SCREEN_INFO_1
                     ).applyFlex(
                         Flex(
                             size = Size(

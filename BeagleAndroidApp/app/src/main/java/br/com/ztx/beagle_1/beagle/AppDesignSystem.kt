@@ -3,7 +3,6 @@ package br.com.ztx.beagle_1.beagle
 import br.com.ztx.beagle_1.R
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.BTN_BLACK
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.BTN_ORANGE
-import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_INIT
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_SCREEN_INFO_1
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.IMG_SCREEN_INFO_2
 import br.com.ztx.beagle_1.beagle.AppDesignSystem.Style.TXT_BOLD
@@ -38,8 +37,8 @@ class AppDesignSystem : DesignSystem {
 
     override fun image(name: String): Int {
         return when (name) {
-            IMG_SCREEN_INFO_1 -> R.mipmap.ic_screen_info_1_round
-            IMG_SCREEN_INFO_2 -> R.mipmap.ic_screen_info_2_round
+            IMG_SCREEN_INFO_1 -> R.drawable.ic_screen_info_1_foreground
+            IMG_SCREEN_INFO_2 -> R.drawable.ic_screen_info_2_foreground
             else -> android.R.drawable.ic_menu_help
         }
     }
