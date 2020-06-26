@@ -8,7 +8,7 @@ class CustomAction: Action {
 
     //TODO Remove action from constructor
     constructor(context: Context, message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+//        Toast.makeText(context, message, Toast.LENGTH_LONG).show()
     }
 
 }
