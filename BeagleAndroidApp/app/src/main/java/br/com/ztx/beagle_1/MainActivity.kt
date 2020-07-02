@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProviders
 import br.com.ztx.beagle_1.MainActivity.Constants.SUBTITLE
 import br.com.ztx.beagle_1.MainActivity.Constants.TITLE
 import br.com.ztx.beagle_1.beagle.AppBeagleConfig
+import br.com.ztx.beagle_1.components.CustomPageIndicatorComponent
 import br.com.ztx.beagle_1.components.views.CustomScreen
 import br.com.zup.beagle.utils.toView
 import br.com.zup.beagle.view.BeagleActivity
@@ -27,13 +28,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initScreenBeagle()
-        getRemoteJson()
-        showScreenServerDrivenUI()
+        //getRemoteJson()
+        //showScreenServerDrivenUI()
     }
 
     private fun initScreenBeagle() {
-        val customScreen = CustomScreen(this, TITLE, SUBTITLE).getScreen()
-        test_content.addView(customScreen.toView(this))
+        //val customScreen = CustomScreen(this, TITLE, SUBTITLE).getScreen()
+        //test_content.addView(customScreen.toView(this))
+        val customPageIndicator = CustomPageIndicatorComponent().getScreen()
+        test_content.addView(customPageIndicator.toView(this))
     }
 
     private fun getRemoteJson() {
@@ -53,4 +56,6 @@ class MainActivity : AppCompatActivity() {
         const val TITLE = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         const val SUBTITLE = "Ut leo eros, porttitor sit amet metus vitae, bibendum porttitor nisi"
     }
+
+
 }
