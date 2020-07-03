@@ -1,11 +1,12 @@
 package br.com.ztx.beagle_1.components.views
 
 import android.content.Context
-import br.com.ztx.beagle_1.beagle.AppDesignSystem
-import br.com.ztx.beagle_1.components.actions.CustomAction
-import br.com.ztx.beagle_1.components.views.CustomScreen.Constants.BTN_TEXT_BLACK
-import br.com.ztx.beagle_1.components.views.CustomScreen.Constants.BTN_TEXT_ORANGE
-import br.com.ztx.beagle_1.components.views.CustomScreen.Constants.TEXT_MESSAGE
+import br.com.ztx.beagle_1.designsystem.StyleConstants
+import br.com.ztx.beagle_1.designsystem.StyleConstants.Tutorial.IMG_SCREEN_INFO_1
+import br.com.ztx.beagle_1.designsystem.StyleConstants.Tutorial.STYLE_BTN_BLACK
+import br.com.ztx.beagle_1.designsystem.StyleConstants.Tutorial.STYLE_BTN_ORANGE
+import br.com.ztx.beagle_1.designsystem.StyleConstants.Tutorial.STYLE_TXT_BOLD
+import br.com.ztx.beagle_1.designsystem.StyleConstants.Tutorial.STYLE_TXT_NORMAL
 import br.com.zup.beagle.ext.unitReal
 import br.com.zup.beagle.widget.core.*
 import br.com.zup.beagle.widget.layout.Container
@@ -14,21 +15,19 @@ import br.com.zup.beagle.widget.ui.Button
 import br.com.zup.beagle.widget.ui.Image
 import br.com.zup.beagle.widget.ui.Text
 
-class CustomScreen(val context: Context, val title: String, val subtitle: String) :
+class CustomScreen(
+    val context: Context,
+    private val title: String,
+    private val subtitle: String
+) :
     CustomBeagleComponent {
-
-    object Constants {
-        const val BTN_TEXT_BLACK = "jump"
-        const val BTN_TEXT_ORANGE = "continue"
-        const val TEXT_MESSAGE = "Toast button clicked!"
-    }
 
     override fun getScreen(): Screen {
         return Screen(
             child = Container(
                 children = listOf(
                     Image(
-                        name = AppDesignSystem.Style.IMG_SCREEN_INFO_1
+                        name = IMG_SCREEN_INFO_1
                     ).applyFlex(
                         Flex(
                             size = Size(
@@ -44,7 +43,7 @@ class CustomScreen(val context: Context, val title: String, val subtitle: String
                     ),
                     Text(
                         text = title,
-                        style = AppDesignSystem.Style.TXT_BOLD
+                        style = STYLE_TXT_BOLD
                     ).applyFlex(
                         Flex(
                             margin = EdgeValue(
@@ -56,7 +55,7 @@ class CustomScreen(val context: Context, val title: String, val subtitle: String
                     ),
                     Text(
                         text = subtitle,
-                        style = AppDesignSystem.Style.TXT_NORMAL
+                        style = STYLE_TXT_NORMAL
                     ).applyFlex(
                         Flex(
                             margin = EdgeValue(
@@ -69,21 +68,12 @@ class CustomScreen(val context: Context, val title: String, val subtitle: String
                     Container(
                         children = listOf(
                             Button(
-                                text = BTN_TEXT_BLACK,
-                                style = AppDesignSystem.Style.BTN_BLACK,
-                                action =
-                                CustomAction(
-                                    context,
-                                    TEXT_MESSAGE
-                                )
+                                text = StyleConstants.Tutorial.TXT_BTN_SKIP,
+                                style = STYLE_BTN_BLACK
                             ),
                             Button(
-                                text = BTN_TEXT_ORANGE,
-                                style = AppDesignSystem.Style.BTN_ORANGE,
-                                action = CustomAction(
-                                    context,
-                                    TEXT_MESSAGE
-                                )
+                                text = StyleConstants.Tutorial.TXT_BTN_CONTINUE,
+                                style = STYLE_BTN_ORANGE
                             )
                         )
                     ).applyFlex(

@@ -1,5 +1,4 @@
-package br.com.ztx.beagle_1.components
-
+package br.com.ztx.beagle_1.components.pageindicator
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -14,6 +13,7 @@ import kotlinx.android.synthetic.main.custom_page_indicator.view.*
 
 typealias OnIndexChanged = (index: Int) -> Unit
 
+//TODO Use animation compatible with all versions of android
 @SuppressLint("NewApi")
 class CustomPageIndicatorView(context: Context) : RelativeLayout(context) {
 

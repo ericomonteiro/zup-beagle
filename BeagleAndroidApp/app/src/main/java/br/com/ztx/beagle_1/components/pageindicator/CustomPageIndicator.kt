@@ -1,5 +1,4 @@
-package br.com.ztx.beagle_1.components
-
+package br.com.ztx.beagle_1.components.pageindicator
 
 import android.content.Context
 import android.view.View
@@ -30,7 +29,9 @@ data class CustomPageIndicator(
         customPageIndicatorView.setCount(pages)
     }
 
-    override fun buildView(context: Context): View = CustomPageIndicatorView(context).apply {
+    override fun buildView(context: Context): View = CustomPageIndicatorView(
+        context
+    ).apply {
         skipName?.let {
             setSkipName(it)
         }

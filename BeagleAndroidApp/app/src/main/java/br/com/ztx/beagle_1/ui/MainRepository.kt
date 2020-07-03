@@ -1,11 +1,11 @@
-package br.com.ztx.beagle_1
+package br.com.ztx.beagle_1.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import br.com.ztx.beagle_1.MainRepository.StatusCode.SUCCESS
-import br.com.ztx.beagle_1.MainRepository.StatusMessage.CONN_ERROR
-import br.com.ztx.beagle_1.MainRepository.StatusMessage.CONN_SUCCESS
-import br.com.ztx.beagle_1.MainRepository.StatusMessage.CONN_UNEXPECTED
+import br.com.ztx.beagle_1.ui.MainRepository.StatusCode.SUCCESS
+import br.com.ztx.beagle_1.ui.MainRepository.StatusMessage.CONN_ERROR
+import br.com.ztx.beagle_1.ui.MainRepository.StatusMessage.CONN_SUCCESS
+import br.com.ztx.beagle_1.ui.MainRepository.StatusMessage.CONN_UNEXPECTED
 import br.com.ztx.beagle_1.beagle.AppBeagleConfig
 import br.com.ztx.beagle_1.beagle.AppCustomClient
 import br.com.zup.beagle.networking.HttpMethod

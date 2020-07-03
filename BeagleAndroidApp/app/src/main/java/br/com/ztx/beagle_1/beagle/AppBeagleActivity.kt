@@ -20,8 +20,7 @@ class AppBeagleActivity : BeagleActivity() {
         setContentView(R.layout.activity_app_beagle)
     }
 
-    override fun getServerDrivenContainerId(): Int =
-        R.id.server_driven_container
+    override fun getServerDrivenContainerId(): Int = R.id.server_driven_container
 
     override fun getToolbar(): Toolbar = custom_toolbar
 

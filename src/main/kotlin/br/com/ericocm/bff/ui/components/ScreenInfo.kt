@@ -1,7 +1,7 @@
-package br.com.ericocm.bff.controller.components
+package br.com.ericocm.bff.ui.components
 
-import br.com.ericocm.bff.controller.components.ScreenInfo.Constants.BTN_TEXT_BLACK
-import br.com.ericocm.bff.controller.components.ScreenInfo.Constants.BTN_TEXT_ORANGE
+import br.com.ericocm.bff.ui.components.ScreenInfo.Constants.BTN_TEXT_BLACK
+import br.com.ericocm.bff.ui.components.ScreenInfo.Constants.BTN_TEXT_ORANGE
 import br.com.zup.beagle.ext.unitReal
 import br.com.zup.beagle.widget.Widget
 import br.com.zup.beagle.widget.core.*

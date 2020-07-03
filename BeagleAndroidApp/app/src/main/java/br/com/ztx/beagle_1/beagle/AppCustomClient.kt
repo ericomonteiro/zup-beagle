@@ -65,10 +65,6 @@ class AppCustomClient : HttpClient {
         })
     }
 
-    private fun getInterceptorOfBeagleDocumentation(){
-
-    }
-
     private fun createResponseData(response: Response): ResponseData {
         val body = response.body?.bytes() ?: byteArrayOf()
         val headers = mutableMapOf<String, String>()

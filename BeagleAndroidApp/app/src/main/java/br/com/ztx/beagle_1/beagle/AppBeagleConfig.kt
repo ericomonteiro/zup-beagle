@@ -11,7 +11,6 @@ import br.com.zup.beagle.setup.Environment
 @BeagleComponent
 class AppBeagleConfig : BeagleConfig {
 
-
     override val baseUrl: String get() = "http://${Config.HOST_3G}:8080/custom_screen"
 
     override val environment: Environment get() = Environment.DEBUG

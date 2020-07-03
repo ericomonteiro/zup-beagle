@@ -1,4 +1,4 @@
-package br.com.ztx.beagle_1.components
+package br.com.ztx.beagle_1.components.pageindicator
 
 import br.com.ztx.beagle_1.components.views.CustomBeagleComponent
 import br.com.zup.beagle.widget.core.AlignSelf

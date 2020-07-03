@@ -1,15 +1,13 @@
 package br.com.ericocm.bff.controller
 
-import br.com.ericocm.bff.controller.MyCustomScreenController.Colors.GRAY
-import br.com.ericocm.bff.controller.MyCustomScreenController.Colors.ORANGE
-import br.com.ericocm.bff.controller.MyCustomScreenController.Constants.SCREEN_INFO_1_SUBTITLE
-import br.com.ericocm.bff.controller.MyCustomScreenController.Constants.SCREEN_INFO_1_TITLE
-import br.com.ericocm.bff.controller.MyCustomScreenController.Constants.SCREEN_INFO_2_SUBTITLE
-import br.com.ericocm.bff.controller.MyCustomScreenController.Constants.SCREEN_INFO_2_TITLE
-import br.com.ericocm.bff.controller.MyCustomScreenController.Style.IMG_SCREEN_INFO_1
-import br.com.ericocm.bff.controller.MyCustomScreenController.Style.IMG_SCREEN_INFO_2
-import br.com.ericocm.bff.controller.components.CustomPageIndicator
-import br.com.ericocm.bff.controller.components.ScreenInfo
+import br.com.ericocm.bff.controller.CustomScreenController.Constants.SCREEN_INFO_1_SUBTITLE
+import br.com.ericocm.bff.controller.CustomScreenController.Constants.SCREEN_INFO_1_TITLE
+import br.com.ericocm.bff.controller.CustomScreenController.Constants.SCREEN_INFO_2_SUBTITLE
+import br.com.ericocm.bff.controller.CustomScreenController.Constants.SCREEN_INFO_2_TITLE
+import br.com.ericocm.bff.controller.CustomScreenController.Style.IMG_SCREEN_INFO_1
+import br.com.ericocm.bff.controller.CustomScreenController.Style.IMG_SCREEN_INFO_2
+import br.com.ericocm.bff.ui.components.CustomPageIndicator
+import br.com.ericocm.bff.ui.components.ScreenInfo
 import br.com.zup.beagle.annotation.BeaglePreview
 import br.com.zup.beagle.core.ServerDrivenComponent
 import br.com.zup.beagle.widget.core.AlignItems
@@ -19,14 +17,13 @@ import br.com.zup.beagle.widget.core.JustifyContent
 import br.com.zup.beagle.widget.layout.Container
 import br.com.zup.beagle.widget.layout.PageView
 import br.com.zup.beagle.widget.layout.Screen
-import br.com.zup.beagle.widget.pager.PageIndicator
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 //TODO Remover magic numbers
 //TODO Mover objects para outro lugar
 @RestController
-class MyCustomScreenController() {
+class CustomScreenController {
 
     @BeaglePreview
     @GetMapping("/custom_screen")
@@ -34,21 +31,17 @@ class MyCustomScreenController() {
         return Screen(
             child = Container(
                 children = listOf(
-                    createViewPager(
-                        listOf(
-                            ScreenInfo(SCREEN_INFO_1_TITLE, SCREEN_INFO_1_SUBTITLE, IMG_SCREEN_INFO_1).build(),
-                            ScreenInfo(SCREEN_INFO_2_TITLE, SCREEN_INFO_2_SUBTITLE, IMG_SCREEN_INFO_2).build()
-                        )
-                    )
+                    createViewPager(listOf(
+                        ScreenInfo(SCREEN_INFO_1_TITLE, SCREEN_INFO_1_SUBTITLE, IMG_SCREEN_INFO_1).build(),
+                        ScreenInfo(SCREEN_INFO_2_TITLE, SCREEN_INFO_2_SUBTITLE, IMG_SCREEN_INFO_2).build()
+                    ))
                 )
-            ).applyFlex(
-                Flex(
-                    flexDirection = FlexDirection.COLUMN,
-                    justifyContent = JustifyContent.SPACE_BETWEEN,
-                    alignItems = AlignItems.CENTER,
-                    grow = 1.0
-                )
-            )
+            ).applyFlex(Flex(
+                flexDirection = FlexDirection.COLUMN,
+                justifyContent = JustifyContent.SPACE_BETWEEN,
+                alignItems = AlignItems.CENTER,
+                grow = 1.0
+            ))
         )
     }
 
