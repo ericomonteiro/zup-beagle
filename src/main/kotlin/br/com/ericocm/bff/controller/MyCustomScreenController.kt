@@ -8,6 +8,7 @@ import br.com.ericocm.bff.controller.MyCustomScreenController.Constants.SCREEN_I
 import br.com.ericocm.bff.controller.MyCustomScreenController.Constants.SCREEN_INFO_2_TITLE
 import br.com.ericocm.bff.controller.MyCustomScreenController.Style.IMG_SCREEN_INFO_1
 import br.com.ericocm.bff.controller.MyCustomScreenController.Style.IMG_SCREEN_INFO_2
+import br.com.ericocm.bff.controller.components.CustomPageIndicator
 import br.com.ericocm.bff.controller.components.ScreenInfo
 import br.com.zup.beagle.annotation.BeaglePreview
 import br.com.zup.beagle.core.ServerDrivenComponent
@@ -53,7 +54,7 @@ class MyCustomScreenController() {
 
     private fun createViewPager(pages: List<ServerDrivenComponent>): PageView {
         return PageView(
-            pageIndicator = PageIndicator(ORANGE, GRAY),
+            pageIndicator = CustomPageIndicator(),
             pages = pages
         )
     }

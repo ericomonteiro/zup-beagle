@@ -20,15 +20,13 @@ class ScreenInfo(val title: String, val subtitle: String, val imageStyle: String
         return Container(
             children = listOf(
                 createImage(),
-                createGroupedText(title, subtitle),
-                createBottomNavigation()
+                createGroupedText(title, subtitle)
             )
         ).applyFlex(
             Flex(
                 flexDirection = FlexDirection.COLUMN,
                 justifyContent = JustifyContent.SPACE_BETWEEN,
-                alignItems = AlignItems.CENTER,
-                grow = 1.0
+                alignItems = AlignItems.CENTER
             )
         )
     }
@@ -40,11 +38,11 @@ class ScreenInfo(val title: String, val subtitle: String, val imageStyle: String
             Flex(
                 flexWrap = FlexWrap.WRAP,
                 size = Size(
-                    width = 225.unitReal(),
-                    height = 225.unitReal()
+                    width = 232.unitReal(),
+                    height = 232.unitReal()
                 ),
                 margin = EdgeValue(
-                    top = 116.unitReal(),
+                    top = 136.unitReal(),
                     start = 64.unitReal(),
                     end = 64.unitReal()
                 ), alignSelf = AlignSelf.CENTER

@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initScreenBeagle()
+//        initScreenBeagle()
         //getRemoteJson()
-        //showScreenServerDrivenUI()
+        showScreenServerDrivenUI()
     }
 
     private fun initScreenBeagle() {

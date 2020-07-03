@@ -37,8 +37,8 @@ class AppDesignSystem : DesignSystem {
 
     override fun image(name: String): Int {
         return when (name) {
-            IMG_SCREEN_INFO_1 -> R.drawable.ic_screen_info_1_foreground
-            IMG_SCREEN_INFO_2 -> R.drawable.ic_screen_info_2_foreground
+            IMG_SCREEN_INFO_1 -> R.drawable.img_fazenda
+            IMG_SCREEN_INFO_2 -> R.drawable.img_ponte
             else -> android.R.drawable.ic_menu_help
         }
     }
@@ -47,7 +47,7 @@ class AppDesignSystem : DesignSystem {
         return when (name) {
             TXT_BOLD -> R.style.tVTitle
             TXT_NORMAL -> R.style.tVSubtitle
-            else -> R.style.TextBlack
+            else -> R.style.tVSubtitle
         }
     }
 

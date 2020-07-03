@@ -30,7 +30,7 @@
                     android:duration="200"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="fillColor"
-                    android:valueFrom="#ff5592"
+                    android:valueFrom="#FF5722"
                     android:valueTo="#dcdcdc"
                     android:valueType="colorType" />
             </set>

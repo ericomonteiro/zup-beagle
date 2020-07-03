@@ -32,7 +32,7 @@
         android:background="?android:attr/selectableItemBackground"
         android:gravity="center"
         android:text="continuar"
-        android:textColor="@android:color/holo_orange_light"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="16sp"
         android:textStyle="bold" />
 
